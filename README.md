@@ -3,6 +3,7 @@
 A simple full-stack to-do list app with:
 
 Backend: https://todo-backend0.onrender.com
+
 Frontend: https://react-todo-app-6o6a.onrender.com
 
 ---
@@ -20,12 +21,12 @@ Base URL: `https://todo-backend0.onrender.com/api/tasks/`
 
 ---
 
-### 📨 Sample Payloads
+###  Sample Output
 
 - **POST/PATCH:**
 
 ```json
 {
-  "title": "Buy groceries",
+  "title": "Sleep",
   "completed": false
 }
