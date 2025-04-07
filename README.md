@@ -1,4 +1,4 @@
-# To-Do Application (React + Django REST API)
+# To-Do Application
 
 Deployed Links:
 
