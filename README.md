@@ -11,7 +11,7 @@ Frontend: https://react-todo-app-6o6a.onrender.com
 **Base URL:**  
 `https://todo-backend0.onrender.com/api/tasks/`
 
-### Available Endpoints
+### API Endpoints
 
 | Method | Endpoint             | Description               |
 |--------|----------------------|---------------------------|
