@@ -94,8 +94,7 @@ DATABASES = {
         'NAME': 'todo_db_mubj',
         'USER': 'todo_db_mubj_user',
         'PASSWORD': 'Yd2jnvTL7WmtyYTd06FlRuHbH8A2x9D7',
-        'HOST': 'dpg-cvpuvba4d50c73bvbtt0-a.oregon-postgres.render.com
-',
+        'HOST': 'dpg-cvpuvba4d50c73bvbtt0-a.oregon-postgres.render.com',
         'PORT': '5432',
         'OPTIONS': {
             'sslmode': 'require'
