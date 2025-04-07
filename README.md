@@ -16,8 +16,8 @@ Base URL: `https://todo-backend0.onrender.com/api/tasks/`
 |--------|------------------------|------------------------|
 | GET    | /api/tasks/           | Fetch all tasks        |
 | POST   | /api/tasks/           | Create a new task      |
-| PATCH  | /api/tasks/<id>/      | Update a task by ID    |
-| DELETE | /api/tasks/<id>/      | Delete a task by ID    |
+| PATCH  | /api/tasks/<2>/      | Update a task by ID    |
+| DELETE | /api/tasks/<1>/      | Delete a task by ID    |
 
 ---
 
