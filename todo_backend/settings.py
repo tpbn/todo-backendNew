@@ -89,19 +89,13 @@ STATIC_ROOT = BASE_DIR/'staticfiles'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'todo_db',
-        'USER': 'host',
-        'PASSWORD': 'SsXcyIaZRxVh4mK1ctwowOJmDDs9DvA2',
-        'HOST': 'dpg-cvpsjkodl3ps73ap2c0g-a.oregon-postgres.render.com',
-        'PORT': '5432',  
-        'OPTIONS': {
-            'sslmode': 'require',
-            'connect_timeout': 5
-         }
-    }
+    'default': dj_database_url.config(
+        default=os.getenv('DATABASE_URL'),
+        conn_max_age=600,
+        ssl_require=True
+    )
 }
+
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
 
