@@ -1,6 +1,6 @@
-# 📝 To-Do Application (React + Django REST API)
+# To-Do Application (React + Django REST API)
 
-A simple full-stack to-do list app with:
+Deployed Links:
 
 Backend: https://todo-backend0.onrender.com
 
