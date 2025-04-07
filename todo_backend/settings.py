@@ -91,8 +91,8 @@ STATIC_ROOT = BASE_DIR/'staticfiles'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'todo_db',
-        'USER': 'todo_db',
+        'NAME': 'todo_db_i921',
+        'USER': 'host',
         'PASSWORD': 'SsXcyIaZRxVh4mK1ctwowOJmDDs9DvA2',
         'HOST': 'dpg-cvpsjkodl3ps73ap2c0g-a.oregon-postgres.render.com',
         'PORT': '5432',  
