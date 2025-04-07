@@ -8,25 +8,23 @@ Frontend: https://react-todo-app-6o6a.onrender.com
 
 ---
 
-## API Endpoints
+### API Endpoints
 
-Base URL: `https://todo-backend0.onrender.com/api/tasks/`
+**Base URL:**  
+`https://todo-backend0.onrender.com/api/tasks/`
 
-| Method | Endpoint              | Description            |
-|--------|------------------------|------------------------|
-| GET    | /api/tasks/           | Fetch all tasks        |
-| POST   | /api/tasks/           | Create a new task      |
-| PATCH  | /api/tasks/<2>/      | Update a task by ID    |
-| DELETE | /api/tasks/<1>/      | Delete a task by ID    |
+| Method | Endpoint             | Description           |
+|--------|----------------------|-----------------------|
+| GET    | /api/tasks/          | Fetch all tasks       |
+| POST   | /api/tasks/          | Create a new task     |
+| PATCH  | /api/tasks/<id>/     | Update a task by ID (e.g., `/api/tasks/2/`) |
+| DELETE | /api/tasks/<id>/     | Delete a task by ID (e.g., `/api/tasks/1/`) |
 
 ---
 
-###  Sample Output
-
-- **POST/PATCH:**
-
+**Request Format** for POST and PATCH:  
 ```json
 {
-  "title": "Sleep",
+  "title": "Buy groceries",
   "completed": false
 }
