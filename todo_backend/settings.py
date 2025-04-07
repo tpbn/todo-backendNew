@@ -54,10 +54,12 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
 ]
 
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = False
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3000',
+    'http://localhost:5173',
+    'http://127.0.0.1:5173',
+    'https://react-todo-app-606a.onrender.com'
 ]
 
 ROOT_URLCONF = 'todo_backend.urls'
@@ -85,8 +87,12 @@ WSGI_APPLICATION = 'todo_backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'todo_db',
+        'USER': 'todo_db',
+        'PASSWORD': 'SsXcyIaZRxVh4mK1ctwowOJmDDs9DvA2',
+        'HOST': 'dpg-cvpsjkodl3ps73ap2c0g-a.render.com',
+        'PORT': '5432',  
     }
 }
 
