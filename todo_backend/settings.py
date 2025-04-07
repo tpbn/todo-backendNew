@@ -9,7 +9,8 @@ https://docs.djangoproject.com/en/5.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
 """
-
+import dj_database_url
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -93,12 +94,14 @@ DATABASES = {
         'NAME': 'todo_db',
         'USER': 'todo_db',
         'PASSWORD': 'SsXcyIaZRxVh4mK1ctwowOJmDDs9DvA2',
-        'HOST': 'dpg-cvpsjkodl3ps73ap2c0g-a.render.com',
+        'HOST': 'dpg-cvpsjkodl3ps73ap2c0g-a.oregon-postgres.render.com',
         'PORT': '5432',  
+        'OPTIONS': {
+            'sslmode': 'require',
+            'connect_timeout': 5
+         }
     }
 }
-
-
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
 
