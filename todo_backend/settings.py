@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-p)+hofli^9i3ps*-=rw2n+guqyr^*p%u&(ku^h9c#rv(kqp$7b
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['todo-backend0.onrender.com']
 
 
 
@@ -82,6 +82,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'todo_backend.wsgi.application'
+
+CSRF_TRUSTED_ORIGINS = ['https://todo-backend0.onrender.com']
 
 STATIC_ROOT = BASE_DIR/'staticfiles'
 
