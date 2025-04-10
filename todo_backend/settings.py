@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 import dj_database_url
 import os
 from pathlib import Path
+from corsheaders.defaults import default_headers
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -65,6 +66,10 @@ CORS_ALLOWED_ORIGINS = [
     'https://react-todo-app-606a.onrender.com'
 ]
 
+CORS_ALLOW_HEADERS = list(default_headers) + [
+    'authorization',  # allows header esp authorization upon secure-hello
+]
+
 ROOT_URLCONF = 'todo_backend.urls'
 
 TEMPLATES = [
@@ -103,6 +108,15 @@ DATABASES = {
             'sslmode': 'require'
         }
     }
+}
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+    ],
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ],
 }
 
 # Password validation
